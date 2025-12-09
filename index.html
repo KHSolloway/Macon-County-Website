@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--This website template was created by: Kristina Solloway | WEB-210 | 12/4/2025-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macon County</title>
+    <meta name="description" content="Macon County Website, an official source for Macon residents">
+
+    <link rel="stylesheet" href="css/styles-home.css">
+    <link rel="stylesheet" href="css/styles-nav.css">
+    <link rel="stylesheet" href="css/styles-colors-fonts.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="shortcut icon" href="images/mock-macon-county-north-carolina-favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/mock-macon-county-north-carolina_32x32.PNG">
+</head>
+
+<body>
+    <header>
+
+        <a href="index.html" class="logo"><img src="images/mock-macon-county-north-carolina.png" alt="Macon County Logo"
+                width="150" height="150"></a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+
+        <!--NAVIGATION BAR-->
+        <nav>
+            <ul>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="government.html">Government</a></li>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="business.html">Business</a></li>
+            </ul>
+        </nav>
+
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+
+    </header>
+
+
+    <!--HOME PAGE-->
+    <main>
+
+        <!--Hero Image Section - Large Viewports-->
+
+        <div id="hero" class="tablet-desktop"></div>
+        <div id="hero-carousel" class="carousel carousel-dark slide tablet-desktop" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active c-item" data-bs-interval="10000">
+                    <img src="images/hero-pexels-mikhail-nilov-6965378.jpg" class="d-block w-100 c-img"
+                        alt="The mountain backdrop of Macon County">
+                    <div class="page-title">
+                        <h1>Welcome to Macon County</h1>
+                        <h4>Building Community since 1828</h4>
+                    </div>
+                </div>
+                <div class="carousel-item c-item" data-bs-interval="2000">
+                    <img src="images/pexels-wayne-porter-898070479-19847267.jpg" class="d-block w-100 c-img"
+                        alt="lakeside view of a neighborhood in Macon Countyy suburbs.">
+                    <div class="page-title">
+                        <h1>Welcome to Macon County</h1>
+                        <h4>Building Community since 1828</h4>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="images/pexels-curtis-adams-1694007-5900810.jpg" class="d-block w-100 c-img"
+                        alt="city scap of Macon City.">
+
+                    <div class="page-title">
+                        <h1>Welcome to Macon County</h1>
+                        <h4>Building Community since 1828</h4>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <!--TOP LINKS SECTION - 1 -->
+        <div class="container-top-links">
+            <div class="top-links">
+                <a href="index.html">
+                    <h1>News</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sint delectus vero voluptate
+                        laboriosam,
+                        quas cumque possimus praesentium vitae soluta reprehenderit quasi accusamus alias eligendi
+                        odio
+                        eius
+                        molestias nisi doloremque perspiciatis mollitia modi? Doloremque quisquam ad voluptatibus
+                        maxime. Quasi ea
+                        nesciunt neque repellat ipsam reiciendis ad maxime fugit fugiat blanditiis.</p>
+                </a>
+            </div>
+            <div class="top-links">
+                <a href="index.html">
+                    <h1>Popular Links</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, blanditiis? Soluta tempore,
+                        vitae
+                        reiciendis sequi error voluptas deleniti nesciunt veniam quis nobis maxime exercitationem
+                        neque
+                        possimus
+                        incidunt quo vel blanditiis magni totam fuga quia ab ducimus praesentium eveniet earum!
+                        Excepturi?</p>
+                </a>
+            </div>
+            <div class="top-links">
+                <a href="index.html">
+                    <h1>Campaigns</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, porro. Debitis odio vel
+                        obcaecati
+                        quia voluptas, amet ipsam ullam praesentium? Repellat minus totam minima eligendi provident
+                        quasi
+                        consequatur excepturi suscipit molestias dolorum ipsa, enim quas inventore explicabo.
+                        Perspiciatis, totam
+                        voluptatem iste nisi molestias laudantium qui eum. Placeat repellendus quibusdam fuga.</p>
+                </a>
+            </div>
+
+
+            <!--TOP LINKS SECTION - 2 -->
+
+            <div class="top-links">
+                <a href="index.html">
+                    <h1>Discover Macon County</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sint delectus vero voluptate
+                        laboriosam,
+                        quas cumque possimus praesentium vitae soluta reprehenderit quasi accusamus alias eligendi
+                        odio
+                        eius
+                        molestias nisi doloremque perspiciatis mollitia modi? Doloremque quisquam ad voluptatibus
+                        maxime. Quasi ea
+                        nesciunt neque repellat ipsam reiciendis ad maxime fugit fugiat blanditiis.</p>
+                </a>
+            </div>
+            <div class="top-links">
+                <a href="index.html">
+                    <h1>Meetings & Events</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, blanditiis? Soluta tempore,
+                        vitae
+                        reiciendis sequi error voluptas deleniti nesciunt veniam quis nobis maxime exercitationem
+                        neque
+                        possimus
+                        incidunt quo vel blanditiis magni totam fuga quia ab ducimus praesentium eveniet earum!
+                        Excepturi?</p>
+                </a>
+            </div>
+
+            <div class="top-links">
+                <a href="index.html">
+                    <h1>Local Government</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, blanditiis? Soluta tempore,
+                        vitae
+                        reiciendis sequi error voluptas deleniti nesciunt veniam quis nobis maxime exercitationem
+                        neque
+                        possimus
+                        incidunt quo vel blanditiis magni totam fuga quia ab ducimus praesentium eveniet earum!
+                        Excepturi?</p>
+                </a>
+            </div>
+
+        </div>
+
+
+        <!--GRID SECTION-->
+        <div class="grid">
+            <figure class="frame">
+                <a href="#"><img src="images/hikers.jpg" alt="people hiking in the woods">
+                    <h1 class="pic-text">The Great Outdoors</h1>
+                    <p class="home-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+                        perspiciatis quis maxime aperiam magnam, error perferendis voluptatem rem neque, repellendus
+                        suscipit dolor quod deserunt harum.</p>
+
+                </a>
+            </figure>
+
+            <figure class="frame">
+                <a href="#"><img src="images/planters.jpg" alt="city sidewalk with planters and trees">
+                    <h1 class="pic-text">City Beautification Project</h1>
+                    <p class="home-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At laudantium
+                        porro accusamus nulla blanditiis ex aut dolorum laborum, ipsa minus reprehenderit, nobis
+                        delectus dolore tempore!</p>
+
+                </a>
+            </figure>
+
+            <figure class="frame">
+                <a href="#"><img src="images/city-pond.jpg" alt="cityscape of Macon with pond in the forefront">
+                    <h1 class="pic-text">Visit Macon City</h1>
+                    <p class="home-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+                        magni quia nemo ullam ipsa inventore itaque cupiditate eveniet sapiente quae, sint ex
+                        repellendus, perferendis voluptatem.</p>
+
+                </a>
+            </figure>
+
+        </div>
+
+        <!--BOTTOM CONTAINER SECTION-->
+        <div class="container-bottom-home">
+
+            <h1>Find Your Neighborhood</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nostrum aut ullam. Saepe eligendi,
+                ipsa, vitae quae nemo, amet aspernatur ab asperiores omnis rerum consequatur?</p>
+
+            <a href="#" target="_blank" class="zipcode-button">Search by Zip Code</a>
+        </div>
+
+    </main>
+
+
+    <!--FOOTER SECTION-->
+    <footer>
+
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"
+                        alt="facebook icon link"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"
+                        alt="instagram icon link"></i></a>
+                <a href="https://x.com/" target="_blank"><i class="fa-brands fa-x" alt="x icon link"></i></a>
+                <a href="https://www.google.com/" target="_blank"><i class="fa-brands fa-google"
+                        alt="google icon link"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"
+                        alt="youtube icon link"></i></a>
+            </div>
+
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Communications</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2025. Designed by <span class="designer">Kristina</span></p>
+
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>
