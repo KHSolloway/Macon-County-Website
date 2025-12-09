@@ -1,0 +1,58 @@
+/* Style rules for MOBILE VIEWPORT */
+
+
+/* STYLING (CONTACT PAGE)                                        (CONTACT PAGE) */
+/*________________________________________________________________________*/
+
+
+
+.entire-list {
+    padding-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+}
+
+.contact-info {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.image {
+    flex-wrap: wrap;
+    padding: 50px;
+
+}
+
+.department {
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.contact-icon i {
+    padding-right: 20px;
+}
+
+
+.social-icons-1 {
+    list-style: none;
+    padding-right: 20px;
+}
+
+.social-category {
+
+    padding-top: 10px;
+    flex-wrap: wrap;
+
+
+}
+
+.social-icons-1 i {
+    list-style: none;
+    padding: 10px;
+
+
+}

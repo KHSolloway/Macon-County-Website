@@ -1,0 +1,226 @@
+/*TOP CONTAINER (HOME PAGE) - Mobile                               (TOP CONTAINER) */
+/*________________________________________________________________________*/
+
+
+
+/*TOP LINKS SECTION - Mobile*/
+
+.page-title {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--bg-White);
+    padding-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: absolute;
+    text-align: center;
+    text-shadow: 4px 4px var(--body-text-color);
+
+}
+
+.page-title h1 {
+    font-weight: bold;
+    font-size: 3em;
+    padding-bottom: 1rem;
+
+}
+
+.page-title h4 {
+    font-weight: bold;
+    font-size: 2em;
+    font-style: italic;
+}
+
+.page-title p {
+    font-size: 1.5em;
+}
+
+.c-item {
+    height: 480px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-carousel {
+    padding-top: 700px;
+}
+
+carousel-caption h1 {
+    color: var(--bg-White);
+    font-weight: bold;
+    font-size: 2em;
+    padding-bottom: 1rem;
+    text-shadow: 2px 2px var(--shadow);
+
+}
+
+.top-links {
+    padding: 30px;
+}
+
+.top-links h1 {
+    color: var(--primary-color);
+}
+
+.top-links p {
+    color: var(--body-text-color);
+
+}
+
+.top-links a {
+    text-decoration: none;
+}
+
+.top-links:hover {
+    opacity: 1;
+    box-shadow: 7px 7px 10px var(--shadow);
+    transform: translateY(10px);
+}
+
+/*GRID SECTION- Mobile                                    (HOME PAGE) */
+/*________________________________________________________________________*/
+.grid {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+    align-items: stretch;
+    margin-top: 50px;
+    padding-bottom: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.frame {
+    position: relative;
+    border: 1px solid var(--shadow);
+    background-color: var(--bg-White);
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.frame a {
+    text-decoration: none;
+}
+
+.frame img {
+    width: 100%;
+
+}
+
+.frame:hover {
+    opacity: 1;
+    box-shadow: 7px 7px 10px var(--shadow);
+    transform: translateY(10px);
+}
+
+.frame h1 {
+    color: var(--primary-color);
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: var(--bg-White);
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.home-description {
+    color: var(--body-text-color);
+    margin: 15px 5px;
+    text-align: left;
+    font-size: 1.25em;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.2;
+}
+
+
+/*BOTTOM CONTAINER (HOME PAGE)                         (BOTTOM CONTAINER) */
+/*________________________________________________________________________*/
+
+.container-bottom-home {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--secondary-color);
+    line-height: 1.75;
+    border-radius: 5px;
+
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    padding: 40px 30px 80px 30px;
+}
+
+.container-bottom-home h1 {
+    font-weight: bold;
+    color: var(--bg-White);
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 1.2px;
+    padding: 10px;
+    margin-top: 10px;
+    text-shadow: 2px 2px var(--shadow);
+}
+
+.container-bottom-home p {
+    text-align: left;
+    padding-bottom: 40px;
+    line-height: 1.2;
+    letter-spacing: 1.2px;
+}
+
+.container-bottom-home .zipcode-button {
+    padding: 15px;
+    margin-top: 40px;
+    background-color: var(--bg-gray);
+    border: var(--shadow);
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--body-text-color);
+    font-size: 1em;
+    text-shadow: 2px 2px var(--shadow);
+}
+
+.container-bottom-home .zipcode-button:hover {
+    opacity: 1;
+    box-shadow: 5px 5px 5px var(--shadow);
+    transform: scale(1.2);
+}
+
+
+
+
+/* Media Query for LARGE VIEWPORTS*/
+@media screen and (min-width: 900px) {
+
+    #hero {
+        padding-top: 170px;
+        max-width: 100%;
+        display: block;
+        padding-bottom: 0%;
+
+
+
+    }
+
+
+    .container-top-links {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        color: var(--body-text-color);
+
+
+    }
+
+
+
+}

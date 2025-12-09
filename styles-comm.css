@@ -1,0 +1,261 @@
+/*TOP CONTAINER (COMMUNITY PAGE) - Mobile                               (TOP CONTAINER) */
+/*________________________________________________________________________*/
+
+.entire-list {
+    padding-top: 200px;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.community {
+
+    text-align: center;
+    color: var(--bg-White);
+    width: auto;
+    border: 2pt solid black;
+    background-color: var(--secondary-color);
+    padding: 5pt;
+}
+
+
+.community h1 {
+    font-weight: bold;
+    font-size: 2em;
+    padding-bottom: 1rem;
+    text-shadow: 2px 2px var(--shadow);
+}
+
+.community p {
+    font-size: 1.5em;
+}
+
+/*TOP LINKS SECTION - Mobile*/
+
+
+.container-top-links {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    font-family: "noto-sans", Helvetica, sans-serif;
+    background-color: var(--bg-White);
+
+    line-height: 1.75;
+    border-radius: 5px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 20px 20px 70px 20px;
+
+    display: grid;
+    color: var(--body-text-color);
+    border: 1pt solid var(--bg-gray);
+
+}
+
+.cmty {
+    text-decoration: none;
+}
+
+.top-links {
+    padding: 30px;
+    gap: 20px;
+}
+
+.top-links h1 {
+    color: var(--primary-color);
+}
+
+.top-links p {
+    color: var(--body-text-color);
+}
+
+.top-links a {
+    text-decoration: none;
+}
+
+.top-links:hover {
+    opacity: 1;
+    box-shadow: 7px 7px 10px var(--shadow);
+    transform: translateY(10px);
+}
+
+
+
+/*BOTTOM CONTAINER (BUSINESS PAGE)                         (BOTTOM CONTAINER) */
+/*________________________________________________________________________*/
+
+.container-bottom-home {
+    padding-top: 50px;
+    display: grid;
+
+    columns: 2;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.events {
+    text-align: center;
+    color: var(--bg-White);
+    font-size: .75em;
+    width: 100%;
+    border: 2pt solid black;
+    text-shadow: 2px 2px var(--shadow);
+    background-color: var(--secondary-color);
+    padding: 5pt;
+}
+
+.events-grid {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: var(--body-text-color);
+}
+
+.events-frame {
+    height: 10rem;
+    width: 20rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-White);
+    border: 5px #eaebe3 solid;
+}
+
+.evnt {
+    text-decoration: none;
+}
+
+.events-frame:hover {
+    opacity: 1;
+    box-shadow: 5px 5px 5px var(--shadow);
+    transform: scale(1.1);
+}
+
+.event-border {
+    border-right: 1pt solid var(--bg-gray);
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    padding-top: 20px;
+    background-color: #eaebe3;
+}
+
+.event-date {
+    text-align: center;
+
+}
+
+
+
+.events-text {
+    flex: 3;
+    padding-left: 10px;
+
+}
+
+.events-frame h1 {
+    color: var(--secondary-color);
+    width: 100%;
+    font-size: 1.2em;
+
+}
+
+.events-frame h2 {
+    color: #7f5828;
+    width: 100%;
+    font-size: 1.75em;
+}
+
+.events-frame p {
+    color: var(--body-text-color);
+    margin-top: 15px;
+    text-align: left;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.2;
+}
+
+.events-text button {
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border: solid #9c9d97 2px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.events-text button:hover {
+    opacity: 1;
+    box-shadow: 5px 5px 5px var(--shadow);
+    transform: translateY(10px);
+}
+
+
+
+/* Media Query for LARGE VIEWPORTS*/
+@media screen and (min-width: 900px) {
+
+    .container-top-links {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        color: var(--body-text-color);
+    }
+
+
+
+    .community {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .community h1 {
+        font-weight: bold;
+        font-size: 3em;
+        padding-bottom: 1rem;
+        text-shadow: 2px 2px var(--shadow);
+    }
+
+    .community p {
+        font-size: 1.5em;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .events {
+        font-size: 1.5em;
+        width: 100%;
+        align-self: center;
+    }
+
+    .events-grid {
+        gap: 30px;
+    }
+
+    .events-frame {
+        width: 30rem;
+    }
+
+    .events-frame h1 {
+        font-size: 1.75em;
+    }
+
+    .events-frame p {
+        font-size: 1.25em;
+    }
+
+
+
+
+}

@@ -1,0 +1,20 @@
+/*Global Styles*/
+
+/*Color Palette:*/
+:root {
+    --primary-color: #101F73;
+    --secondary-color: #01403A;
+    --bg-gray: #D9CEB0;
+    --accent-goldenrod: #BF8339;
+    --bg-White: #f5f2f2;
+    --shadow: #A6978F;
+    --body-text-color: #000000;
+
+}
+
+/*Font Classes*/
+
+* {
+  font-family: "Noto Sans", "source-serif-4" sans-serif;
+
+}

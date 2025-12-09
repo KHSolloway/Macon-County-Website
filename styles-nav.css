@@ -1,0 +1,366 @@
+/*TOP CONTAINER (NAVIGATION & RESET PAGE) - Mobile                               (TOP CONTAINER) */
+/*________________________________________________________________________*/
+
+
+/*CSS Reset*/
+body,
+header,
+nav,
+main,
+footer,
+h1,
+div,
+img,
+p,
+aside,
+article {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+.logo {
+    max-width: 80%;
+    height: auto;
+    margin-left: 50px;
+    object-fit: contain;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+}
+
+body {
+    background-color: var(--bg-White);
+    color: var(--body-text-color);
+    overflow-x: hidden;
+}
+
+
+/* Style rules for MOBILE VIEWPORT */
+
+
+
+/* NAVIGATION BAR & HEADER STYLING for MOBILE                    (NAV / HEADER) */
+/*________________________________________________________________________*/
+
+
+header {
+    background: #101F73;
+    background-image: linear-gradient(to right, var(--bg-gray), var(--primary-color));
+    color: white;
+    padding: 10px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    text-align: center;
+}
+
+/*checkbox for hamburger button*/
+.nav-toggle {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+
+.nav-toggle:focus~.nav-toggle-label {
+    outline: 3px solid var(--bg-White) .75;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+/*END checkbox for hamburger button*/
+
+/*hamburger button*/
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+/*END Hamburger button*/
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--primary-color);
+    background-image: linear-gradient(to right, var(--bg-gray), var(--primary-color));
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+    z-index: 999;
+
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+.nav-toggle:checked~nav {
+    transform: scale(1, 1);
+}
+
+.nav-toggle:checked~nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+
+
+
+
+/* FOOTER STYLING                                                (FOOTER) */
+/*________________________________________________________________________*/
+
+footer {
+    background-color: var(--primary-color);
+    background-image: linear-gradient(to right, var(--bg-gray), var(--primary-color));
+    color: var(--bg-White);
+    padding: 10px;
+    /*justify-content: center;*/
+    position: sticky;
+    z-index: 999;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-container {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--bg-White);
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.social-icons a i {
+    font-size: 2em;
+    color: var(--primary-color);
+    opacity: 0.9;
+}
+
+.social-icons a:hover {
+    background-color: var(--secondary-color);
+    transition: 0.5s;
+}
+
+.social-icons a:hover i {
+    color: var(--bg-White);
+    transition: 0.5s;
+}
+
+.footer-nav {
+    margin: 0;
+    padding: 0;
+    margin-left: -50px;
+}
+
+.footer-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footer-nav ul li a {
+    color: var(--bg-White);
+    margin: 20px;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.footer-nav ul li a:hover {
+    opacity: 1;
+}
+
+.footer-bottom {
+    background-color: var(--primary-color);
+    padding: 20px;
+    margin: -10px;
+    text-align: center;
+    background-image: linear-gradient(to right, var(--bg-gray), var(--primary-color));
+}
+
+.footer-bottom p {
+    color: var(--bg-White);
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+
+/*Media Query for FOOTER for Mobile*/
+@media screen and (max-width: 700px) {
+
+    .footer-nav ul {
+        flex-direction: column;
+    }
+
+    .footer-nav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .social-icons a {
+        padding: 8px;
+        margin: 4px;
+    }
+
+    /*Show mobile class, hide tablet-desktop class*/
+    .mobile {
+        display: block;
+    }
+
+
+
+}
+
+
+/* Media Query for LARGE VIEWPORTS (did not create a query for tablets) */
+@media screen and (min-width: 900px) {
+
+
+
+
+
+    header {
+        display: grid;
+        grid-template-columns: .5fr auto minmax(200px, 3fr) auto;
+    }
+
+    .logo {
+        grid-column: 1 / 3;
+    }
+
+
+
+
+    nav {
+        position: relative;
+        text-align: left;
+        transition: none;
+        transform: scale(1, 1);
+        background: none;
+        top: initial;
+        left: initial;
+        /* end Edge support stuff */
+        grid-column: 3 / 4;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        padding-right: 4rem;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        margin-left: 3em;
+        margin-bottom: 0;
+    }
+
+    nav a {
+        opacity: 1;
+        position: relative;
+    }
+
+    nav a::before {
+        content: '';
+        display: block;
+        height: 5px;
+        background: white;
+        position: absolute;
+        top: -.75em;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transition: transform ease-in-out 250ms;
+    }
+
+    nav a:hover::before {
+        transform: scale(1, 1);
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+
+}
