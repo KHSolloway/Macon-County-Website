@@ -1,7 +1,9 @@
 /*TOP CONTAINER (HOME PAGE) - Mobile                               (TOP CONTAINER) */
 /*________________________________________________________________________*/
 
-
+#hero {
+        padding-top: 170px;
+}
 
 /*TOP LINKS SECTION - Mobile*/
 
@@ -220,6 +222,7 @@ carousel-caption h1 {
 
 
     }
+
 
 
 
